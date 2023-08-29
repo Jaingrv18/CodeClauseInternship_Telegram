@@ -23,6 +23,7 @@ app.use("/api/messages", messageRoutes);
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, console.log(`Server running on PORT ${PORT}`));
+
 const io = socket(server, {
   cors: {
     origin: "http://localhost:3000",
